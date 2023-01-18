@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>939</width>
+    <height>423</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Making</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color : black; Color : rgb(152,243,6);</string>
+  </property>
+  <widget class="QLabel" name="srcimage">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>411</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : black; Color : rgb(152,243,6); border : 1px solid rgb(152,243,6)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dstimage">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>10</y>
+     <width>411</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : black; Color : rgb(152,243,6); border : 1px solid rgb(152,243,6)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="make_btn">
+   <property name="geometry">
+    <rect>
+     <x>424</x>
+     <y>130</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>50</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent; border: 0px</string>
+   </property>
+   <property name="text">
+    <string>→</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hidden_info">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : black; Color : rgb(152,243,6); border : 1px solid rgb(152,243,6)</string>
+   </property>
+   <property name="text">
+    <string>Width : 
+Height : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cover_info">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>320</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : black; Color : rgb(152,243,6); border : 1px solid rgb(152,243,6)</string>
+   </property>
+   <property name="text">
+    <string>Width : 
+Height : </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="load_hidden">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>200</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : black; Color : rgb(152,243,6); border : 1px solid rgb(152,243,6)</string>
+   </property>
+   <property name="text">
+    <string>Load Hidden Image</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="color_combo">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>170</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : black; Color : rgb(152,243,6); border : 1px solid rgb(152,243,6)</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Red</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Green</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Blue</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="plane_combo">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>210</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : black; Color : rgb(152,243,6); border : 1px solid rgb(152,243,6)</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Plane 0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Plane 1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Plane 2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Plane 3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Plane 4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Plane 5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Plane 6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Plane 7</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="load_cover">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>280</y>
+     <width>211</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : black; Color : rgb(152,243,6); border : 1px solid rgb(152,243,6)</string>
+   </property>
+   <property name="text">
+    <string>Load Covering Image</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="home">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>370</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : black; Color : rgb(152,243,6); border : 1px solid rgb(152,243,6)</string>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="hidden_scroll">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>411</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>409</width>
+      <height>249</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QScrollArea" name="cover_scroll">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>10</y>
+     <width>411</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>409</width>
+      <height>249</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="caution">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>380</y>
+     <width>441</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="manual">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>382</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : black; Color : rgb(152,243,6); border : 1px solid rgb(152,243,6)</string>
+   </property>
+   <property name="text">
+    <string>How to use?</string>
+   </property>
+  </widget>
+  <zorder>cover_scroll</zorder>
+  <zorder>hidden_scroll</zorder>
+  <zorder>srcimage</zorder>
+  <zorder>dstimage</zorder>
+  <zorder>make_btn</zorder>
+  <zorder>hidden_info</zorder>
+  <zorder>cover_info</zorder>
+  <zorder>load_hidden</zorder>
+  <zorder>color_combo</zorder>
+  <zorder>plane_combo</zorder>
+  <zorder>load_cover</zorder>
+  <zorder>home</zorder>
+  <zorder>caution</zorder>
+  <zorder>manual</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
