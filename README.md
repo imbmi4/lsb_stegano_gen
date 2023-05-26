@@ -7,7 +7,7 @@
 혹시나 이걸 보시는 분들은 그래도 LSB 스테가노그래피가 뭔지 아실 분들 같으니 설명은 생략하겠습니다.
 
 일단 필요한 라이브러리 : 
-PyQt5, pillow, requests, beautifulsoup5
+PyQt5, pillow, requests, beautifulsoup4
 입니다.
 
 뒤에 두 개는 심심해서 그냥 보안뉴스 크롤링해오는 거 해놔서 필요한거에용. LSB 스테가노하고는 거리가 좀 멀어서 죄송하네용..
